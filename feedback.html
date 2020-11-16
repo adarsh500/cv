@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="decor.css">
+  <link rel="icon" href="images/favicon.ico">
+  <style>
+    body {
+      margin: 100px 0 0 0;
+      background-color: #373a40;
+      color: white;
+      font-family: arial;
+    }
+    .button {
+      background-color: #19d3da;
+      color: white;
+      padding: 20px 25px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      font-size: 130%;
+      margin-left: ;
+      margin-top: 80px;
+      border: 1px solid #19d3da;
+      border-radius: 20px;
+      width: 250px;
+    }
+    input[type=text]{
+
+      text-align: center;
+      width: 60%;
+      padding: 13px 20px;
+      margin: auto;
+      border: 3px solid #19d3da;
+      border-radius: 20px;
+      transition: width 0.3s ease-in-out;
+    }
+    input[type=text]:focus{
+      width: 70%;
+    }
+    textarea{
+      width: 85%;
+      padding: 13px 20px;
+      margin: auto;
+      border: 1px solid white;
+      border-radius: 20px;
+      border: 3px solid #19d3da;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <center>
+  <form class="feedback" action="mailto:adarsh.sulegai500@gmail.com" method="post">
+    <table width="60%" cellspacing="20px">
+      <tr>
+        <td><center><input type="text" name="feedback_name" value="" placeholder="Your Name"></center></td>
+      </tr>
+      <tr>
+        <td><center><input type="text" name="feedback_mail" value="" size="50px" placeholder="Your e-mail"></center></td>
+      </tr>
+      <tr>
+        <td><center><textarea name="feedback_fdb" rows="10" cols="50" placeholder="Go on we're listening.."></textarea></center></td>
+      </tr>
+    </table>
+
+    <input class="button" type="button" name="submit_fdb" value="Submit">
+    </center>
+  </form>
+</body>
+
+</html>
